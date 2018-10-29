@@ -1,0 +1,1 @@
+export const mailchimpApiKey = '049e0015f6c80d8a233e21cfe0bbaeab-us14'

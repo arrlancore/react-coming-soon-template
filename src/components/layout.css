@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.bgimg {
+  /* Background image */
+  background-image: url('../images/bg-coming-soon.jpeg');
+  /* Full-screen */
+  min-height: 100vh;
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+  width: 100%;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.bg-layout {
+  width: 100%;
+  background-color: rgba(0,0,0, 0.9);
+  display: block;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.h1 {
+  color: #DDD;
+  font-size: 48px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.brand-logo {
+  width: 160px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 400px) {
+  .brand-logo {
+    width: 200px;
+  }
+}
+.services {
+  margin-top: 20px;
+}
+.services span {
+  text-transform: uppercase;
+}
+.c-wrap {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background: #dadada;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  top: 220px;
+}
+.content {
+  width: 100%;
+}
+.content input, .emails {
+  height: 36px;
+  border-radius: 40px;
+  outline: none;
+  border: 0;
+  background: #efefef;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.button, .buttons {
+  cursor: pointer;
+  background-color: #333; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 40px;
+  outline: none;
+  border: 0;
+  width: 170px;
+}
+.content p {
+  font-size: 14px;
+}
+.button:hover {
+  opacity: 0.9;
+}
