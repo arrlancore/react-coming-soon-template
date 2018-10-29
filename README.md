@@ -9,6 +9,7 @@ Kick off your new website with coming soon kick starter template.
 
 **Simple clone.**
 
-    ```
-    git clone https://github.com/arrlancore/react-coming-soon-template.git
-    ```
+    ` git clone https://github.com/arrlancore/react-coming-soon-template.git `
+    ` cd react-coming-soon-template `
+    
+    
