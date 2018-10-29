@@ -78,6 +78,36 @@ hr {
   width: 160px;
   border-radius: 10px;
 }
+
+.social_icon_wrapper {
+  margin-top: 1%;
+}
+
+.social_icon {
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+.social_icon:hover {
+  cursor: pointer;
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color:#1DA1F2;
+}
+
+.fa-linkedin-in:hover {
+  color:#0077B5
+}
+
+.fa-instagram:hover {
+  color: #e4405f;
+}
+
 @media screen and (min-width: 400px) {
   .brand-logo {
     width: 200px;
