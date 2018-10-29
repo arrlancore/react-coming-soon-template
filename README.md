@@ -13,5 +13,14 @@ Clone the repository. Update as you required and upload to your hosting.
 
     ` git clone https://github.com/arrlancore/react-coming-soon-template.git `
     ` cd react-coming-soon-template `
-    
-    
+## 🚀 Deployment
+Build Project
+
+    $ yarn build
+
+**Firebase.**
+```sh
+$ firebase login
+$ firebase init
+$ firebase deploy
+```
