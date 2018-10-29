@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout";
 import Timer from "../components/timer"
+import SocialIcon from "../images/linkedin-in-brands.svg"
 
 class IndexPage extends React.Component {
   state={
@@ -26,6 +27,7 @@ class IndexPage extends React.Component {
               </div>
             </div>
             <div className="bottomleft">
+              <img src={SocialIcon} alt="linkedin social icon">
             </div>
           </div>
         </div>
