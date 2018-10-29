@@ -12,3 +12,14 @@ Kick off your new website with coming soon kick starter template.
     ```
     git clone https://github.com/arrlancore/react-coming-soon-template.git
     ```
+## 🚀 Deployment
+Build Project
+
+    $ yarn build
+
+**Firebase.**
+```sh
+$ firebase login
+$ firebase init
+$ firebase deploy
+```
