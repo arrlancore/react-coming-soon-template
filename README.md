@@ -4,6 +4,7 @@
 
 Kick off your new website with coming soon kick starter template.
 
+![Screenshoot of demo](https://user-images.githubusercontent.com/16473868/47648801-21516480-dba1-11e8-8ff8-2091c13aadcb.png)
 
 ## 🚀 Quick start
 
