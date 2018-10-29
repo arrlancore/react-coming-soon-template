@@ -7,6 +7,8 @@ Kick off your new website with coming soon kick starter template.
 
 ## 🚀 Quick start
 
+Clone the repository. Update as you required and upload to your hosting. 
+
 **Simple clone.**
 
     ```
