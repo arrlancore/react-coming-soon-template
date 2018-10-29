@@ -7,11 +7,12 @@ Kick off your new website with coming soon kick starter template.
 
 ## 🚀 Quick start
 
+Clone the repository. Update as you required and upload to your hosting. 
+
 **Simple clone.**
 
-    ```
-    git clone https://github.com/arrlancore/react-coming-soon-template.git
-    ```
+    ` git clone https://github.com/arrlancore/react-coming-soon-template.git `
+    ` cd react-coming-soon-template `
 ## 🚀 Deployment
 Build Project
 
