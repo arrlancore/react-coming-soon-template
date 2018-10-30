@@ -16,11 +16,11 @@ Clone the repository. Update as you required and upload to your hosting.
     ` cd react-coming-soon-template `
 
 ## 🚀 Prerequisites
-* <a href="https://yarnpkg.com/en/">Yarn</a>, follow the <a href="https://yarnpkg.com/en/docs/install">installion guide</a>
+* <a href="https://yarnpkg.com/en/">Yarn</a>, follow the installation <a href="https://yarnpkg.com/en/docs/install">guide</a>
 * <a href="https://nodejs.org/en/">Node.js</a>
-* <a href="">Firebase</a>, <a href="">install using npm guide</a>
+* <a href="">Firebase</a>, installation <a href="">guide</a>
 ```
-    $npm install -g firebase-tools
+    $ npm install -g firebase-tools
 ```
 ## 🚀 Minimum requirements
 install all dependencies using Yarn,
