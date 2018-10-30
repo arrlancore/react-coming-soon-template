@@ -20,12 +20,12 @@ Clone the repository. Update as you required and upload to your hosting.
 
 ## Installation
 
-    ` npm install`
+    ` yarn install`
 
 ## Customising
 
-    Type your own header and message in `index.js` file.
-    You can add your own background image in `layout.css` file.
+    Type your own header and message in index.js file.
+    You can add your own background image in layout.css file.
 
 ## 🚀 Deployment
 Build Project
