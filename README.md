@@ -20,9 +20,11 @@ Clone the repository. Update as you required and upload to your hosting.
 
 ## 🚀 Minimum requirements
 install all dependencies using Yarn,
-    Yarn install
+
+    $ Yarn install
 
 The following dependencies will be installed
+```sh
     gatsby: ^2.0.0,
     gatsby-plugin-manifest: ^2.0.2
     gatsby-plugin-offline: ^2.0.5
@@ -30,6 +32,7 @@ The following dependencies will be installed
     react: ^16.5.1
     react-dom: ^16.5.1
     react-helmet: ^5.2.0
+```
 
 ## 🚀 Deployment
 Build Project
