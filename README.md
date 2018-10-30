@@ -17,15 +17,20 @@ Clone the repository. Update as you required and upload to your hosting.
 
 ## 🚀 Prerequisites
 * <a href="https://yarnpkg.com/en/">Yarn</a>, follow the <a href="https://yarnpkg.com/en/docs/install">installion guide</a>
-
+* <a href="https://nodejs.org/en/">Node.js</a>
+* <a href="">Firebase</a>, <a href="">install using npm guide</a>
+```
+    $npm install -g firebase-tools
+```
 ## 🚀 Minimum requirements
 install all dependencies using Yarn,
-
+```
     $ Yarn install
+```
 
-The following dependencies will be installed
-```sh
-    gatsby: ^2.0.0,
+The following dependencies will be installed:
+```
+    gatsby: ^2.0.0
     gatsby-plugin-manifest: ^2.0.2
     gatsby-plugin-offline: ^2.0.5
     gatsby-plugin-react-helmet: ^3.0.0
