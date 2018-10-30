@@ -1,36 +1,43 @@
 import React from 'react'
-import Layout from "../components/layout";
-import Timer from "../components/timer"
+import Layout from '../components/layout'
+import Timer from '../components/timer'
 
 class IndexPage extends React.Component {
-  state={
-    email: ''
+  state = {
+    email: '',
   }
   handleV = (e) => {
     this.setState({ email: e.target.value })
   }
+
   render() {
-    return(
+    return (
       <Layout>
+
         <div className="bgimg">
           <div className="bg-layout">
             <div className="middle">
               <div className="content">
                 <h1 className="h1">COMING SOON</h1>
-                <Timer />
+                <Timer/>
                 <p>We will be launch soon, enter your email address and get our early notification.</p>
-                <input name="email" type="text" placeholder="email address" />
+                <input name="email" type="text" placeholder="email address"/>
                 <button className="button">Submit</button>
+                <div className="icons_wrapper"><i className="fab social_icon fa-facebook-f"></i><i
+                  className="fab social_icon fa-twitter"></i> <i className="fab social_icon fa-linkedin-in"></i><i
+                  className="fab social_icon fa-instagram"></i></div>
+
                 <div id="mc_embed_signup">
-              </div>
+                </div>
               </div>
             </div>
             <div className="bottomleft">
             </div>
           </div>
         </div>
-      </Layout>
-    )
+
+  </Layout>
+  )
   }
 }
 
