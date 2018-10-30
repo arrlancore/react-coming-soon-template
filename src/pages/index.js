@@ -21,6 +21,7 @@ class IndexPage extends React.Component {
                 <p>We will be launch soon, enter your email address and get our early notification.</p>
                 <input name="email" type="text" placeholder="email address" />
                 <button className="button">Submit</button>
+                <div className="social_icon_wrapper"><i className="fab social_icon fa-facebook-f"></i><i class="fab social_icon fa-twitter"></i> <i class="fab social_icon fa-linkedin-in"></i><i class="fab social_icon fa-instagram"></i></div>
                 <div id="mc_embed_signup">
               </div>
               </div>
