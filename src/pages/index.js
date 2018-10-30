@@ -14,6 +14,14 @@ class IndexPage extends React.Component {
       <Layout>
         <div className="bgimg">
           <div className="bg-layout">
+		<div class="slider">
+  <div class="slides">
+    <div class="slider-1"></div>
+    <div class="slider-2"></div>
+    <div class="slider-3"></div>
+    <div class="slider-4"></div>
+  </div>
+</div>
             <div className="middle">
               <div className="content">
                 <h1 className="h1">COMING SOON</h1>

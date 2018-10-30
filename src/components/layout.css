@@ -5,18 +5,19 @@ body, html {
   width: 100%;
   margin: 0;
   font-family: 'Open Sans', Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 .bgimg {
   /* Background image */
-  background-image: url('../images/bg-coming-soon.jpeg');
+  /* background-image: url('../images/bg-coming-soon.jpeg'); */
   /* Full-screen */
-  min-height: 100vh;
-  height: 100%;
+  /* min-height: 100vh; */
+  /* height: 100%; */
   /* Center the background image */
-  background-position: center;
+  /* background-position: center; */
   /* Scale and zoom in the image */
-  background-size: cover;
+  /* background-size: cover; */
   /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
   position: relative;
   /* Add a white text color to all elements inside the .bgimg container */
@@ -157,4 +158,145 @@ hr {
 
 .Countdown-col-element strong{
   font-size: 50px;
+}
+
+.slider{
+  width:100vw;
+  height:100vh;
+  border:1px solid;
+  overflow:hidden;
+}
+.slides{
+  width:400%;
+  height:100%;
+  -webkit-animation:slide 16s infinite;
+  -moz-animation:slide 16s infinite;
+  animation:slide 16s infinite;
+    /*-webkit-animation-iteration-count: 2,2,2,2; /* Chrome, Safari, Opera */
+    /*animation-iteration-count: 2,2,2,2;*/
+}
+.slider-1, .slider-2, .slider-3, .slider-4{
+  width:25%;
+  height:100%;
+  float:left;
+}
+.slider-1{
+  background-image: url('../images/bg-coming-soon.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.slider-2{
+  background-image: url('../images/bg-coming-soon.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.slider-3{
+  background-image: url('../images/bg-coming-soon.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.slider-4{
+  background-image: url('../images/bg-coming-soon.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+@-webkit-keyframes slide{
+    0%,100% {
+        margin-left:0%;
+    }
+    
+    12% {
+        margin-left:0%;
+    }
+    
+    24% {
+        margin-left:-100%;
+    }
+    
+    36% {
+        margin-left:-100%;
+    }
+    
+    48% {
+        margin-left:-200%;
+    }
+    
+    60% {
+        margin-left:-200%;
+    }
+    
+    72% {
+        margin-left:-300%;
+    }
+    
+    84% {
+        margin-left:-300%;  
+    }
+}
+@-moz-keyframes slide{
+  0%,100% {
+        margin-left:0%;
+    }
+    
+    12% {
+        margin-left:0%;
+    }
+    
+    24% {
+        margin-left:-100%;
+    }
+    
+    36% {
+        margin-left:-100%;
+    }
+    
+    48% {
+        margin-left:-200%;
+    }
+    
+    60% {
+        margin-left:-200%;
+    }
+    
+    72% {
+        margin-left:-300%;
+    }
+    
+    84% {
+        margin-left:-300%;  
+    }
+}
+@keyframes slide{
+  0%,100% {
+        margin-left:0%;
+    }
+    
+    12% {
+        margin-left:0%;
+    }
+    
+    24% {
+        margin-left:-100%;
+    }
+    
+    36% {
+        margin-left:-100%;
+    }
+    
+    48% {
+        margin-left:-200%;
+    }
+    
+    60% {
+        margin-left:-200%;
+    }
+    
+    72% {
+        margin-left:-300%;
+    }
+    
+    84% {
+        margin-left:-300%;  
+    }
 }
