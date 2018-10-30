@@ -18,7 +18,7 @@ Clone the repository. Update as you required and upload to your hosting.
 ## 🚀 Prerequisites
 * <a href="https://yarnpkg.com/en/">Yarn</a>, follow the installation <a href="https://yarnpkg.com/en/docs/install">guide</a>
 * <a href="https://nodejs.org/en/">Node.js</a>
-* <a href="">Firebase</a>, installation <a href="">guide</a>
+* <a href="">Firebase</a>, installation <a href="">guide</a> for more details
 ```
     $ npm install -g firebase-tools
 ```
