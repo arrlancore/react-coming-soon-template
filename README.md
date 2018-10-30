@@ -14,6 +14,10 @@ Clone the repository. Update as you required and upload to your hosting.
 
     ` git clone https://github.com/arrlancore/react-coming-soon-template.git `
     ` cd react-coming-soon-template `
+
+## 🚀 Prerequisites
+<a href="https://yarnpkg.com/en/">Yarn</a>, follow the <a href="https://yarnpkg.com/en/docs/install">installion guide</a>
+
 ## 🚀 Deployment
 Build Project
 
