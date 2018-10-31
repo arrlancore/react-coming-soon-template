@@ -80,17 +80,26 @@ class Timer extends Component {
 
     return (
       <div className="Countdown">
+        {countDown.years > 0 && (
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <strong>{this.addLeadingZeros(countDown.years)}</strong>
+              <span>{countDown.years === 1 ? 'Year' : 'Years'}</span>
+            </span>
+          </span>
+        )}
+
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-              <strong>{this.addLeadingZeros(countDown.days)}</strong>
-              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+            <strong>{this.addLeadingZeros(countDown.days)}</strong>
+            <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
           </span>
         </span>
 
         <span className="Countdown-col">
           <span className="Countdown-col-element">
             <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span>Hours</span>
+            <span>{countDown.hours === 1 ? 'Hour' : 'Hours'}</span>
           </span>
         </span>
 
