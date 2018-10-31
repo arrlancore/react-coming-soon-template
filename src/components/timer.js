@@ -1,4 +1,4 @@
-import React, {  Component } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Timer extends Component {
@@ -59,7 +59,7 @@ class Timer extends Component {
       diff -= timeLeft.min * 60;
     }
     timeLeft.sec = diff;
-   
+
     return timeLeft;
   }
 
@@ -114,11 +114,11 @@ class Timer extends Component {
 }
 
 Timer.propTypes = {
-    date: PropTypes.string.isRequired
-  };
-  
+  date: PropTypes.string.isRequired
+};
+
 Timer.defaultProps = {
-    date: "10/30/2018"
+  date: "10/31/2018 22:30"
 };
 
 export default Timer;
