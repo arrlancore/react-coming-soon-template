@@ -6,6 +6,7 @@ class Timer extends Component {
     super(props);
 
     this.state = {
+      years: 0,
       days: 0,
       hours: 0,
       min: 0,
@@ -33,12 +34,11 @@ class Timer extends Component {
     if (diff <= 0) return false;
 
     const timeLeft = {
-      years: 1,
-      days: 1,
+      years: 0,
+      days: 0,
       hours: 0,
       min: 0,
-      sec: 0,
-      millisec: 0,
+      sec: 0
     };
 
     // calculate time difference between now and expected date
