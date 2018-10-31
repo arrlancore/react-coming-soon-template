@@ -35,7 +35,7 @@ class Timer extends Component {
 
     const timeLeft = {
       years: 1,
-      days: 1,
+      days: 0,
       hours: 0,
       min: 0,
       sec: 0,
@@ -122,8 +122,8 @@ Timer.propTypes = {
 }
 
 Timer.defaultProps = {
-  date: '12/30/2018',
-  time: '00:00'
+  date: '11/2/2018',
+  time: '05:27'
 };
 
 export default Timer
