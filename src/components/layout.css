@@ -160,6 +160,24 @@ hr {
   outline: none;
   border: 0;
   width: 170px;
+  border: 1px solid transparent;
+}
+.button:active, .button:focus {
+  border: 1px solid #fff;
+}
+.button-social {
+  background: transparent;
+  border: none;
+  padding: 0 8px;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+}
+.button-social:hover {
+  position: relative;
+  top: -2px;
+  opacity: 0.8;
 }
 .content p {
   font-size: 14px;
