@@ -122,8 +122,8 @@ Timer.propTypes = {
 }
 
 Timer.defaultProps = {
-  date: '10/30/2018',
-  time: '00:00',
-}
+  date: '12/30/2018',
+  time: '00:00'
+};
 
 export default Timer
