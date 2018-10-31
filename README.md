@@ -14,6 +14,31 @@ Clone the repository. Update as you required and upload to your hosting.
 
     ` git clone https://github.com/arrlancore/react-coming-soon-template.git `
     ` cd react-coming-soon-template `
+
+## 🚀 Prerequisites
+* <a href="https://yarnpkg.com/en/">Yarn</a>, follow the installation <a href="https://yarnpkg.com/en/docs/install">guide</a>
+* <a href="https://nodejs.org/en/">Node.js</a>
+* <a href="">Firebase</a>, installation <a href="">guide</a> for more details
+```
+    $ npm install -g firebase-tools
+```
+## 🚀 Minimum requirements
+install all dependencies using Yarn,
+```
+    $ Yarn install
+```
+
+The following dependencies will be installed:
+```
+    gatsby: ^2.0.0
+    gatsby-plugin-manifest: ^2.0.2
+    gatsby-plugin-offline: ^2.0.5
+    gatsby-plugin-react-helmet: ^3.0.0
+    react: ^16.5.1
+    react-dom: ^16.5.1
+    react-helmet: ^5.2.0
+```
+
 ## 🚀 Deployment
 Build Project
 
