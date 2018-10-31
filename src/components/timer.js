@@ -15,10 +15,15 @@ class Timer extends Component {
   }
 
   componentDidMount() {
-    // update every second
+    const endDate = this.props.date;
+
+    // Initialize countdown for the first time
+    this.setState(this.calculateCountdown(endDate));
+
+    // Update every second
     this.interval = setInterval(() => {
-      const date = this.calculateCountdown(this.props.date);
-      date ? this.setState(date) : this.stop();
+      const countdown = this.calculateCountdown(endDate);
+      countdown ? this.setState(countdown) : this.stop();
     }, 1000);
   }
 
