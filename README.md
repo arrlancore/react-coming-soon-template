@@ -24,8 +24,11 @@ Clone the repository. Update as you required and upload to your hosting.
 
 ## Customising
 
-    Type your own header and message in index.js file.
-    You can add your own background image in layout.css file.
+    Type your own header and message in index.js:19.
+    You can add your own background image in layout.css:12.
+    To set timer add in index.js:20 sth like that:
+
+    ` <Timer  data={{date: '10/31/2018'}}/>`
 
 ## 🚀 Deployment
 Build Project
