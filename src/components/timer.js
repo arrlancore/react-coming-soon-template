@@ -6,6 +6,7 @@ class Timer extends Component {
     super(props)
 
     this.state = {
+      years: 0,
       days: 0,
       hours: 0,
       min: 0,
@@ -14,12 +15,15 @@ class Timer extends Component {
   }
 
   componentDidMount() {
-    // update every second
+    const endDate = `${this.props.date} ${this.props.time}`
+
+    // Initialize countdown for the first time
+    this.setState(this.calculateCountdown(endDate))
+
+    // Update every second
     this.interval = setInterval(() => {
-      const date = this.calculateCountdown(
-        `${this.props.date} ${this.props.time}`
-      )
-      date ? this.setState(date) : this.stop()
+      const countdown = this.calculateCountdown(endDate);
+      countdown ? this.setState(countdown) : this.stop();
     }, 1000)
   }
 
@@ -34,12 +38,11 @@ class Timer extends Component {
     if (diff <= 0) return false
 
     const timeLeft = {
-      years: 1,
+      years: 0,
       days: 0,
       hours: 0,
       min: 0,
-      sec: 0,
-      millisec: 0,
+      sec: 0
     }
 
     // calculate time difference between now and expected date
@@ -84,6 +87,15 @@ class Timer extends Component {
 
     return (
       <div className="Countdown">
+        {countDown.years > 0 && (
+          <span className="Countdown-col">
+            <span className="Countdown-col-element">
+              <strong>{this.addLeadingZeros(countDown.years)}</strong>
+              <span>{countDown.years === 1 ? 'Year' : 'Years'}</span>
+            </span>
+          </span>
+        )}
+
         <span className="Countdown-col">
           <span className="Countdown-col-element">
             <strong>{this.addLeadingZeros(countDown.days)}</strong>
@@ -94,7 +106,7 @@ class Timer extends Component {
         <span className="Countdown-col">
           <span className="Countdown-col-element">
             <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-            <span>Hours</span>
+            <span>{countDown.hours === 1 ? 'Hour' : 'Hours'}</span>
           </span>
         </span>
 
@@ -124,6 +136,6 @@ Timer.propTypes = {
 Timer.defaultProps = {
   date: '11/2/2018',
   time: '05:27'
-};
+}
 
 export default Timer
