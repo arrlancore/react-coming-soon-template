@@ -133,9 +133,15 @@ Timer.propTypes = {
   time: PropTypes.string.isRequired,
 }
 
+const defaultDate = {
+  day: new Date().getDate(),
+  month: new Date().getMonth() + 2,
+  year: new Date().getFullYear()
+}
+
 Timer.defaultProps = {
-  date: '11/2/2018',
-  time: '05:27'
+  date: `${defaultDate.month}/${defaultDate.day}/${defaultDate.year}`,
+  time: '23:59'
 }
 
 export default Timer
