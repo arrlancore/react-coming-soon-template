@@ -3,11 +3,13 @@
   "description": "React with gatsby",
   "version": "1.0.0",
   "author": "Dwiki Arlan <arrlancore@gmail.com>",
+  "homepage": "https://arrlancore.github.io/react-coming-soon-template/",
   "dependencies": {
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
@@ -20,7 +22,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d public"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -43,7 +47,10 @@
       ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
       ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
     },
-    "testPathIgnorePatterns": ["node_modules", ".cache"],
+    "testPathIgnorePatterns": [
+      "node_modules",
+      ".cache"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!(gatsby)/)"
     ],
