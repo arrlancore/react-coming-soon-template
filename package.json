@@ -12,7 +12,8 @@
     "gh-pages": "^2.1.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-particles-js": "^2.7.0"
   },
   "keywords": [
     "gatsby"
@@ -32,9 +33,9 @@
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^25.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^23.6.0",
+    "jest": "^25.0.0",
     "prettier": "^1.14.2",
     "react-test-renderer": "^16.6.0"
   },
