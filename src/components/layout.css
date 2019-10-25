@@ -9,7 +9,7 @@ body, html {
 
 .bgimg {
   /* Background image */
-  background-image: url('../images/bg-coming-soon.jpeg');
+  /*background-image: url('../images/bg-coming-soon.jpeg');*/
   /* Full-screen */
   min-height: 100vh;
   height: 100%;
