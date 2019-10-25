@@ -2,7 +2,19 @@ import React from 'react'
 import Layout from "../components/layout";
 import Timer from "../components/timer"
 import bgimg from '../images/bg-coming-soon.jpeg';
+import Particles from 'react-particles-js';
 
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    }
+  }
+};
 class IndexPage extends React.Component {
   state={
     email: ''
@@ -14,6 +26,7 @@ class IndexPage extends React.Component {
     return(
       <Layout bgImg={bgimg}>
           <div className="bg-layout">
+          <Particles className="particles" params={particlesOptions} />
             <div className="middle">
               <div className="content">
                 <h1 className="h1">COMING SOON</h1>
