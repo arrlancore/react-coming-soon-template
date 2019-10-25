@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout";
 import Timer from "../components/timer"
+import bgimg from '../images/bg-coming-soon.jpeg';
 
 class IndexPage extends React.Component {
   state={
@@ -11,8 +12,7 @@ class IndexPage extends React.Component {
   }
   render() {
     return(
-      <Layout>
-        <div className="bgimg">
+      <Layout bgImg={bgimg}>
           <div className="bg-layout">
             <div className="middle">
               <div className="content">
@@ -46,7 +46,6 @@ class IndexPage extends React.Component {
             </div>
             <div className="bottomleft">
             </div>
-          </div>
         </div>
       </Layout>
     )

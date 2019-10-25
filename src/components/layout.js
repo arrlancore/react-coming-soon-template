@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children,bgImg  }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -30,7 +30,9 @@ const Layout = ({ children }) => (
         </Helmet>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="container">
-          {children}
+          <div className="bgimg" style={{backgroundImage: `url(${bgImg})`}}>
+            {children} 
+          </div>
         </div>
       </>
     )}
