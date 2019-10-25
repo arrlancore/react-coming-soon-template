@@ -56,27 +56,31 @@ To set timer add props date and time at Timer component, example:
 
 ## Deployment
 
-Build Project
+1. Deploying with firebase CLI
 
-    $ yarn build
+   Build Project
 
-Upload to Firebase.
+   ```sh
+   $ yarn build
+   ```
 
-```sh
-$ firebase login
-$ firebase init
-$ firebase deploy
-```
+   Upload to Firebase.
 
-## Deploying at Netlify
+   ```sh
+   $ firebase login
+   $ firebase init
+   $ firebase deploy
+   ```
 
-- Sign up with Github/Gitlab/Bitbucket or Email
-- Connect to Git Provider
-- Authorize Git Provider
-- Pick Your Repository
-- Select Branch to Deploy (Default: master)
-- Change the build command to `yarn build`
-- Click `Deploy` button
+2. Deploying with netlify
+
+   - Sign up with Github/Gitlab/Bitbucket or Email
+   - Connect to Git Provider
+   - Authorize Git Provider
+   - Pick Your Repository
+   - Select Branch to Deploy (Default: master)
+   - Change the build command to `yarn build`
+   - Click `Deploy` button
 
 ## License
 
