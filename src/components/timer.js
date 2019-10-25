@@ -22,9 +22,17 @@ class Timer extends Component {
 
     // Update every second
     this.interval = setInterval(() => {
-      const countdown = this.calculateCountdown(endDate);
-      countdown ? this.setState(countdown) : this.stop();
+      const countdown = this.calculateCountdown(endDate)
+      this.setState(countdown)
+      if (this.countdownComplete(countdown)) {
+        this.stop()
+      }
     }, 1000)
+  }
+
+  countdownComplete(countdown) {
+    const { years, days, hours, min, sec } = countdown
+    return ((((years === days) === hours) === min) === sec) === 0
   }
 
   componentWillUnmount() {
@@ -34,16 +42,16 @@ class Timer extends Component {
   calculateCountdown(endDate) {
     let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000
 
-    // clear countdown when date is reached
-    if (diff <= 0) return false
-
     const timeLeft = {
       years: 0,
       days: 0,
       hours: 0,
       min: 0,
-      sec: 0
+      sec: 0,
     }
+
+    // clear countdown when date is reached
+    if (diff <= 0) return timeLeft
 
     // calculate time difference between now and expected date
     if (diff >= 365.25 * 86400) {
@@ -136,12 +144,12 @@ Timer.propTypes = {
 const defaultDate = {
   day: new Date().getDate(),
   month: new Date().getMonth() + 2,
-  year: new Date().getFullYear()
+  year: new Date().getFullYear(),
 }
 
 Timer.defaultProps = {
   date: `${defaultDate.month}/${defaultDate.day}/${defaultDate.year}`,
-  time: '23:59'
+  time: '23:59',
 }
 
 export default Timer
