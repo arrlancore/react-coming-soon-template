@@ -82,6 +82,19 @@ To set timer add props date and time at Timer component, example:
    - Change the build command to `yarn build`
    - Click `Deploy` button
 
+## Deploy at Netlify
+
+- Sign up with your favorite repository server or email on netifly
+- Click on Sites
+- Click on button new "site from"
+- Connect to Git Provider
+- Authorize Git Provider
+- Pick Your Repository
+- Select Branch to Deploy (Default: master)
+- Change the build command to `gatsby build`
+- Change Publish directory to `public/`
+- Click `Deploy site` button
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

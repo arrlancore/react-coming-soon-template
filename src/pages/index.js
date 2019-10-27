@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout";
 import Timer from "../components/timer"
+import bgimg from '../images/bg-coming-soon.jpeg';
 import Particles from 'react-particles-js';
 
 const particlesOptions = {
@@ -14,7 +15,6 @@ const particlesOptions = {
     }
   }
 };
-
 class IndexPage extends React.Component {
   state={
     email: ''
@@ -24,8 +24,7 @@ class IndexPage extends React.Component {
   }
   render() {
     return(
-      <Layout>
-        <div className="bgimg">
+      <Layout bgImg={bgimg}>
           <div className="bg-layout">
           <Particles className="particles" params={particlesOptions} />
             <div className="middle">
@@ -60,7 +59,6 @@ class IndexPage extends React.Component {
             </div>
             <div className="bottomleft">
             </div>
-          </div>
         </div>
       </Layout>
     )
