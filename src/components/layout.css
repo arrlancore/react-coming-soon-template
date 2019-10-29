@@ -142,9 +142,23 @@ hr {
   width: 100%;
   max-width: 400px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 5px;
   font-size: 14px;
+  border: 2px solid transparent;
 }
+
+.content input.error {
+  border-color: red;
+}
+
+.content .error-message {
+  color: red;
+  min-height: 20px;
+  max-width: 400px;
+  font-size: 14px;
+  margin: auto;
+}
+
 .button, .buttons {
   cursor: pointer;
   background-color: #333; /* Green */
