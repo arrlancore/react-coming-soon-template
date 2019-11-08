@@ -11,8 +11,8 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("workbox-v3.6.2/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "workbox-v3.6.2"});
+importScripts("workbox-v3.5.0/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "workbox-v3.5.0"});
 
 workbox.core.setCacheNameDetails({prefix: "gatsby-plugin-offline"});
 
@@ -26,40 +26,43 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-1f462b288d2f97c11f74.js"
+    "url": "webpack-runtime-bd2976628980efde90dc.js"
   },
   {
-    "url": "app-cd5e84d8718973387619.js"
+    "url": "app-fb2598f9113c163fce13.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-0a722e7e178d3c22dc4e.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-c9c937b9491619a6493b.js"
   },
   {
     "url": "index.html",
-    "revision": "75159c4e735b12e73c83028b4a52b04d"
+    "revision": "d24fe04ad4a08fece7c95b7916f7d91e"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f970c82879f9ccbbf92ce5632507529e"
+    "revision": "095b6e46a09be19f8c47098b8d7eda7a"
   },
   {
-    "url": "component---src-pages-index-js.c82b4cac783fff1ca114.css"
+    "url": "component---src-pages-index-js.ddde5bf7c6c0289fc735.css"
   },
   {
-    "url": "component---src-pages-index-js-ec88df181b73f958c7e5.js"
+    "url": "component---src-pages-index-js-9b18adb6d91b214e512b.js"
   },
   {
-    "url": "0-490cd7b71df52f2e183d.js"
+    "url": "6-9c8c533a87339006ac4c.js"
+  },
+  {
+    "url": "0-a7f66ded25c8dcf7f958.js"
   },
   {
     "url": "static/d/173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E.json",
     "revision": "c2508676a2f33ea9f1f0bf472997f9a0"
   },
   {
-    "url": "component---src-pages-404-js.c82b4cac783fff1ca114.css"
+    "url": "component---src-pages-404-js.ddde5bf7c6c0289fc735.css"
   },
   {
-    "url": "component---src-pages-404-js-032cdf8cb44bf9a2009a.js"
+    "url": "component---src-pages-404-js-d3f39b394e2ad0f26f41.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
