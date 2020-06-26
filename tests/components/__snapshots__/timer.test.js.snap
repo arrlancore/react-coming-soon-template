@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer renders correctly 1`] = `
+<div
+  className="Countdown"
+>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        01
+      </strong>
+      <span>
+        Day
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Hours
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Min
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Sec
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Timer renders correctly for a countdown to a date 1 day in the future 1`] = `
+<div
+  className="Countdown"
+>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        01
+      </strong>
+      <span>
+        Day
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Hours
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Min
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Sec
+      </span>
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Timer renders correctly for a date in the past 1`] = `
+<div
+  className="Countdown"
+>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Days
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Hours
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Min
+      </span>
+    </span>
+  </span>
+  <span
+    className="Countdown-col"
+  >
+    <span
+      className="Countdown-col-element"
+    >
+      <strong>
+        00
+      </strong>
+      <span>
+        Sec
+      </span>
+    </span>
+  </span>
+</div>
+`;
