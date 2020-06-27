@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -8,8 +9,6 @@ body, html {
 }
 
 .bgimg {
-  /* Background image */
-  background-image: url('../images/bg-coming-soon.jpeg');
   /* Full-screen */
   min-height: 100vh;
   height: 100%;
@@ -61,14 +60,14 @@ hr {
 
 .bg-layout {
   width: 100%;
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
   display: block;
   min-height: 100vh;
   height: 100%;
 }
 
 .h1 {
-  color: #DDD;
+  color: #ddd;
   font-size: 48px;
   margin: 20px 0;
   font-weight: bold;
@@ -97,11 +96,11 @@ hr {
 }
 
 .fa-twitter:hover {
-  color:#1DA1F2;
+  color: #1da1f2;
 }
 
 .fa-linkedin-in:hover {
-  color:#0077B5
+  color: #0077b5;
 }
 
 .fa-instagram:hover {
@@ -132,7 +131,8 @@ hr {
 .content {
   width: 100%;
 }
-.content input, .emails {
+.content input,
+.emails {
   height: 36px;
   border-radius: 40px;
   outline: none;
@@ -145,7 +145,8 @@ hr {
   margin: 0 auto;
   font-size: 14px;
 }
-.button, .buttons {
+.button,
+.buttons {
   cursor: pointer;
   background-color: #333; /* Green */
   border: none;
@@ -162,7 +163,8 @@ hr {
   width: 170px;
   border: 1px solid transparent;
 }
-.button:active, .button:focus {
+.button:active,
+.button:focus {
   border: 1px solid #fff;
 }
 .button-social {
@@ -187,22 +189,22 @@ hr {
 }
 
 /* styles for Countdown timer */
-.Countdown{
+.Countdown {
   margin: 10px auto;
   padding-bottom: 20px;
 }
 
-.Countdown-col{
+.Countdown-col {
   display: inline-block;
 }
 
-.Countdown-col-element{
+.Countdown-col-element {
   display: inline-block;
   margin: 0 20px;
   display: flex;
   flex-direction: column;
 }
 
-.Countdown-col-element strong{
+.Countdown-col-element strong {
   font-size: 50px;
 }
