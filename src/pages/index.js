@@ -1,7 +1,10 @@
 import React from 'react'
+import Particles from 'react-particles-js'
+import axios from 'axios'
+
 import Layout from '../components/layout'
 import Timer from '../components/timer'
-import Particles from 'react-particles-js'
+import firebaseDB from '../util/firebase'
 
 import backgroundImage from '../images/shopping-together.jpg'
 // import imageLogo from '../images/Tushare.png'
@@ -62,9 +65,17 @@ class IndexPage extends React.Component {
   state = {
     email: '',
   }
-  handleV = e => {
-    this.setState({ email: e.target.value })
+
+  onEmailChangeHandler = event => {
+    this.setState({
+      email: event.target.value,
+    })
   }
+
+  submitEmailAddress = () => {
+    firebaseDB.ref().push({ email: this.state.email })
+  }
+
   render() {
     return (
       <Layout backgroundImage={backgroundImage}>
@@ -79,8 +90,16 @@ class IndexPage extends React.Component {
                 Enter your email address to get early notifications on our
                 upcoming platform.
               </p>
-              <input name="email" type="text" placeholder="email address" />
-              <button className="button">Submit</button>
+              <input
+                name="email"
+                type="text"
+                placeholder="email address"
+                value={this.state.email}
+                onChange={this.onEmailChangeHandler}
+              />
+              <button className="button" onClick={this.submitEmailAddress}>
+                Submit
+              </button>
               <div id="mc_embed_signup" />
             </div>
           </div>
