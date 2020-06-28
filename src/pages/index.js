@@ -1,9 +1,9 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import axios from 'axios'
 
 import Layout from '../components/layout'
 import Timer from '../components/timer'
+import EmailInput from '../components/emailInput'
 import firebaseDB from '../util/firebase'
 
 import backgroundImage from '../images/shopping-together.jpg'
@@ -98,16 +98,11 @@ class IndexPage extends React.Component {
                 Enter your email address to get early notifications on our
                 upcoming platform.
               </p>
-              <input
-                name="email"
-                type="text"
-                placeholder="email address"
-                value={this.state.email}
-                onChange={this.onEmailChangeHandler}
+              <EmailInput
+                email={this.state.email}
+                onEmailChangeHandler={this.onEmailChangeHandler}
+                submitEmailAddress={this.submitEmailAddress}
               />
-              <button className="button" onClick={this.submitEmailAddress}>
-                Submit
-              </button>
               <div id="mc_embed_signup" />
             </div>
           </div>
