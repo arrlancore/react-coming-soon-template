@@ -17,8 +17,6 @@ class Timer extends Component {
   componentDidMount() {
     const endDate = `${this.props.date} ${this.props.time}`
 
-    console.log(endDate)
-
     // Initialize countdown for the first time
     this.setState(this.calculateCountdown(endDate))
 

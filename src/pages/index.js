@@ -73,7 +73,15 @@ class IndexPage extends React.Component {
   }
 
   submitEmailAddress = () => {
-    firebaseDB.ref().push({ email: this.state.email })
+    firebaseDB
+      .ref()
+      .push({ email: this.state.email })
+      .then(result => {
+        this.setState({ email: '' })
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
 
   render() {
