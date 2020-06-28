@@ -78,9 +78,13 @@ class IndexPage extends React.Component {
       .push({ email: this.state.email })
       .then(result => {
         this.setState({ email: '' })
+        alert(
+          'Thank you your interest! We will notify you on our platform launch early access!'
+        )
       })
       .catch(err => {
         console.log(err)
+        alert("There's something wrong. Please re-submit")
       })
   }
 

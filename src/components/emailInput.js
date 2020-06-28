@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = ({ email, onEmailChangeHandler, submitEmailAddress }) => (
+const EmailInput = ({ email, onEmailChangeHandler, submitEmailAddress }) => (
   <div>
     <input
       name="email"
@@ -15,4 +15,4 @@ const Header = ({ email, onEmailChangeHandler, submitEmailAddress }) => (
   </div>
 )
 
-export default Header
+export default EmailInput
