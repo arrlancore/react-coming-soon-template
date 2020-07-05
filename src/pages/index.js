@@ -3,9 +3,7 @@ import Particles from 'react-particles-js'
 
 import Layout from '../components/layout'
 import Timer from '../components/timer'
-import EmailInput from '../components/emailInput'
-import firebaseDB from '../util/firebase'
-
+import EmailForm from '../components/emailForm'
 import backgroundImage from '../images/shopping-together.jpg'
 // import imageLogo from '../images/Tushare.png'
 
@@ -62,32 +60,6 @@ const particlesOptions = {
 }
 
 class IndexPage extends React.Component {
-  state = {
-    email: '',
-  }
-
-  onEmailChangeHandler = event => {
-    this.setState({
-      email: event.target.value,
-    })
-  }
-
-  submitEmailAddress = () => {
-    firebaseDB
-      .ref()
-      .push({ email: this.state.email })
-      .then(result => {
-        this.setState({ email: '' })
-        alert(
-          'Thank you your interest! We will notify you on our platform launch early access!'
-        )
-      })
-      .catch(err => {
-        console.log(err)
-        alert("There's something wrong. Please re-submit")
-      })
-  }
-
   render() {
     return (
       <Layout backgroundImage={backgroundImage}>
@@ -102,11 +74,7 @@ class IndexPage extends React.Component {
                 Enter your email address to get early notifications on our
                 upcoming platform.
               </p>
-              <EmailInput
-                email={this.state.email}
-                onEmailChangeHandler={this.onEmailChangeHandler}
-                submitEmailAddress={this.submitEmailAddress}
-              />
+              <EmailForm />
               <div id="mc_embed_signup" />
             </div>
           </div>
