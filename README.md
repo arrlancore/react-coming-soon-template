@@ -1,4 +1,4 @@
-# React coming soon template
+# React coming soon template (the amazing project)
 
 Kick off your new website with coming soon starter template.
 Coming soon website templates helps you to retain customers when you are busy in revamping your website.
