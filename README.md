@@ -1,3 +1,4 @@
+Amazing website 
 # React coming soon template
 
 Kick off your new website with coming soon starter template.
