@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+  
+tasks:
+  - init: yarn
+    command: yarn start
+
+ports:
+  - port: 3000
+    onOpen: open-preview
