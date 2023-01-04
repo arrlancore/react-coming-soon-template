@@ -28,7 +28,7 @@
     "deploy": "gh-pages -d public"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.20.7",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
